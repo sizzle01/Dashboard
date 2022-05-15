@@ -1,6 +1,31 @@
 .card-wrapper{
+    margin: 95px 0 27px 30px ;
+    overflow-x: scroll;
     .card{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 76px;
+        width: 253px;
+        
+     .card-info{
+       color:#787C90 ;
+       font-family: 'Segoe UI';
+         .desc{
+           font-size: 12px;
+           margin: 0;
+        }
+        .amount{
+         color: #262626;
+         font-size: 18px
+         }
+         .card-icon{
+             background-color: black;
+         }
+    }
    background-color: white; 
-   width: 253px;    
+   display: flex;
+   width: 253px;
+   padding:10px;
     }
 }
