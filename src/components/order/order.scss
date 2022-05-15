@@ -1,0 +1,38 @@
+.order-wrapper{
+    background-color: white;
+    width: 379px;
+    padding: 10px 0px; 
+    margin-bottom: 3px;
+    
+     .order{
+         margin-left:25px ;
+        .order-head{
+            font-family: 'Segoe UI';
+            font-size: 14px;
+           font-weight: 700;
+            color: #262626;
+        }
+     .outer{
+     width: 242px;
+     background-color: #FDC203;
+     height: 4px;
+    .inner{
+     height: 4px;
+     width: 80%;
+     background-color: green;
+ }
+}
+.pending{
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    color: #262626;
+    font-weight: 400;
+    }
+    span{
+        font-family: 'Segoe UI';
+        font-size: 14px;
+        color: #262626;
+        font-weight: 400;
+    }
+}
+}

@@ -6,6 +6,13 @@
     
       .cards{
       display: flex;
+      overflow-x: scroll;
+      overflow: hidden;
+    }
+    .transaction-info{
+       margin-left: 30px;
+       width: 92%;
+       display: flex;
     }
    }
 
