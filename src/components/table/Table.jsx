@@ -2,10 +2,13 @@ import './table.scss'
 import Select from '../select/Select'
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown'
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined'
-import React, { useEffect, useState, useMemo } from 'react'
+import React, { useEffect, useState, useMemo, Lazy, Suspense } from 'react'
 import { TableHeader, Pagination, Search } from './index'
-import useFullPageLoader from './useFullPageLoader'
+import useFullPageLoader from '../fullPageLoader/useFullPageLoader'
 import 'bootstrap/dist/css/bootstrap.css'
+
+// const Search = lazy(() => import('./index'))
+
 const Table = () => {
   const [comments, setComments] = useState([])
   const [loader, showLoader, hideLoader] = useFullPageLoader()

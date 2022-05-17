@@ -1,11 +1,19 @@
-import React from 'react'
-import Chart from '../../components/chart/Chart'
-import Navbar from '../../components/navbar/Navbar'
+import React, { lazy, Lazy, Suspense } from 'react'
+// import Chart from '../../components/chart/Chart'
+// import Navbar from '../../components/navbar/Navbar'
 import Order from '../../components/order/Order'
 import Sidebar from '../../components/sidebar/Sidebar'
 import Table from '../../components/table/table'
-import TransactionCards from '../../components/transactionCard/TransactionCards'
+// import TransactionCards from '../../components/transactionCard/TransactionCards'
 import './home.scss'
+
+const Chart = lazy(() => import('../../components/chart/Chart'))
+
+const TransactionCards = lazy(() =>
+  import('../../components/transactionCard/TransactionCards'),
+)
+
+const Navbar = lazy(() => import('../../components/navbar/Navbar'))
 
 const cardContent = [
   {
@@ -28,44 +36,46 @@ const cardContent = [
 
 const Home = () => {
   return (
-    <div className="home">
-      <Sidebar />
-      <div className="homeContainer">
-        <Navbar />
-        <div className="cards">
-          {cardContent.map((content) => (
-            <TransactionCards
-              amount={content.amount}
-              description={content.description}
-            />
-          ))}
-        </div>
-        <div className="transaction-info">
-          <Chart />
-          <div className="order-info">
-            <Order
-              transactionType="Orders"
-              PendingOrders="Pending Orders"
-              pendingCount="20"
-              reconciledOrders="Reconciled orders"
-              ReconciledCount="80"
-              totalOrder="Total orders"
-              totalCount="100"
-            />
-            <Order
-              transactionType="Payments"
-              PendingOrders="Un-reconciled Payments"
-              pendingCount="20"
-              reconciledOrders="Reconciled Payments"
-              ReconciledCount="80"
-              totalOrder="Total Payments"
-              totalCount="100"
-            />
+    <Suspense fallback={<div>Loading...</div>}>
+      <div className="home">
+        <Sidebar />
+        <div className="homeContainer">
+          <Navbar />
+          <div className="cards">
+            {cardContent.map((content) => (
+              <TransactionCards
+                amount={content.amount}
+                description={content.description}
+              />
+            ))}
           </div>
+          <div className="transaction-info">
+            <Chart />
+            <div className="order-info">
+              <Order
+                transactionType="Orders"
+                PendingOrders="Pending Orders"
+                pendingCount="20"
+                reconciledOrders="Reconciled orders"
+                ReconciledCount="80"
+                totalOrder="Total orders"
+                totalCount="100"
+              />
+              <Order
+                transactionType="Payments"
+                PendingOrders="Un-reconciled Payments"
+                pendingCount="20"
+                reconciledOrders="Reconciled Payments"
+                ReconciledCount="80"
+                totalOrder="Total Payments"
+                totalCount="100"
+              />
+            </div>
+          </div>
+          <Table />
         </div>
-        <Table />
       </div>
-    </div>
+    </Suspense>
   )
 }
 
