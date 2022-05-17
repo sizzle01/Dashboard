@@ -1,6 +1,17 @@
 import './sidebar.scss'
 import { Link } from 'react-router-dom'
-import { Icons } from '../icons'
+import {
+  Icons,
+  Overview,
+  Wallet,
+  CheckedWallet,
+  Unreconciled,
+  Settlement,
+  AllOrders,
+  PendingOrders,
+  ReconciledOrders,
+  Merchant,
+} from '../icons'
 const Sidebar = () => {
   return (
     <div className="sidebar">
@@ -14,37 +25,37 @@ const Sidebar = () => {
         <ul>
           <p className="menu-title">MAIN</p>
           <li>
-            <Icons className="icon" />
-            <span>All Payments</span>
+            <Overview className="icon" />
+            <span>Overview</span>
           </li>
           <li>
-            <Icons className="icon" />
+            <Wallet className="icon" />
             <span>Reconcilled Payments</span>
           </li>
           <li>
-            <Icons className="icon" />
+            <CheckedWallet className="icon" />
             <span>Un - Reconcilled Payments</span>
           </li>
           <li>
-            <Icons className="icon" />
+            <Unreconciled className="icon" />
             <span>Manual Settlement</span>
           </li>
           <p className="menu-title">Orders</p>
           <li>
-            <Icons className="icon" />
+            <Settlement className="icon" />
             <span>All Orders</span>
           </li>
           <li>
-            <Icons className="icon" />
+            <AllOrders className="icon" />
             <span>Reconcilled Orders </span>
           </li>
           <li>
-            <Icons className="icon" />
+            <PendingOrders className="icon" />
             <span>Pending Orders</span>
           </li>
 
           <li>
-            <Icons className="icon" />
+            <Merchant className="icon" />
             <span>Merchant Profile</span>
           </li>
         </ul>
