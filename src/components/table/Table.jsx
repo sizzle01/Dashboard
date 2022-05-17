@@ -3,10 +3,9 @@ import Select from '../select/Select'
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown'
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined'
 import React, { useEffect, useState, useMemo } from 'react'
-// import Header from 'components/Header'
 import { TableHeader, Pagination, Search } from './index'
 import useFullPageLoader from './useFullPageLoader'
-
+import 'bootstrap/dist/css/bootstrap.css'
 const Table = () => {
   const [comments, setComments] = useState([])
   const [loader, showLoader, hideLoader] = useFullPageLoader()

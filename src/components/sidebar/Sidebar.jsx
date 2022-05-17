@@ -23,25 +23,31 @@ const Sidebar = () => {
       <div className="center">
         <ul>
           <p className="menu-title">MAIN</p>
-          <div className="menu">
-            <li>
-              <Overview className="icon" />
-              <span>Overview</span>
-            </li>
-          </div>
+          <Link to="/" style={{ textDecoration: 'none' }}>
+            <div className="menu">
+              <li>
+                <Overview className="icon" />
+                <span>Overview</span>
+              </li>
+            </div>
+          </Link>
           <p className="menu-title">Payments</p>
-          <div className="menu">
-            <li>
-              <Wallet className="icon" />
-              <span>Reconcilled Payments</span>
-            </li>
-          </div>
-          <div className="menu">
-            <li>
-              <CheckedWallet className="icon" />
-              <span>Un - Reconcilled Payments</span>
-            </li>
-          </div>
+          <Link to="/" style={{ textDecoration: 'none' }}>
+            <div className="menu">
+              <li>
+                <Wallet className="icon" />
+                <span>Reconcilled Payments</span>
+              </li>
+            </div>
+          </Link>
+          <Link to="/" style={{ textDecoration: 'none' }}>
+            <div className="menu">
+              <li>
+                <CheckedWallet className="icon" />
+                <span>Un - Reconcilled Payments</span>
+              </li>
+            </div>
+          </Link>
           <div className="menu">
             <li>
               <Unreconciled className="icon" />
@@ -55,24 +61,28 @@ const Sidebar = () => {
               <span>All Orders</span>
             </li>
           </div>
-          <div className="menu">
-            <li>
-              <AllOrders className="icon" />
-              <span>Reconcilled Orders </span>
-            </li>
-          </div>
+          <Link to="/" style={{ textDecoration: 'none' }}>
+            <div className="menu">
+              <li>
+                <AllOrders className="icon" />
+                <span>Reconcilled Orders </span>
+              </li>
+            </div>
+          </Link>
           <div className="menu">
             <li>
               <PendingOrders className="icon" />
               <span>Pending Orders</span>
             </li>
           </div>
-          <div className="menu">
-            <li>
-              <Merchant className="icon" />
-              <span>Merchant Profile</span>
-            </li>
-          </div>
+          <Link to="/" style={{ textDecoration: 'none' }}>
+            <div className="menu">
+              <li>
+                <Merchant className="icon" />
+                <span>Merchant Profile</span>
+              </li>
+            </div>
+          </Link>
         </ul>
       </div>
     </div>

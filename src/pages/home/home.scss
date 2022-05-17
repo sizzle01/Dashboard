@@ -1,11 +1,11 @@
 .home{
-   display: flex;
+   display: flex !important;
    .homeContainer{
       width: 81%;
       background:#F7F8FA;
     
       .cards{
-      display: flex;
+      display: flex !important;
       overflow-x: scroll;
       overflow: hidden;
     }

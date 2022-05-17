@@ -30,10 +30,8 @@ const Home = () => {
   return (
     <div className="home">
       <Sidebar />
-
       <div className="homeContainer">
         <Navbar />
-
         <div className="cards">
           {cardContent.map((content) => (
             <TransactionCards

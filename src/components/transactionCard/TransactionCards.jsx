@@ -5,7 +5,7 @@ const TransactionCards = ({ description, amount }) => {
   return (
     <div className="card-wrapper">
       <div className="cards">
-        <div className="card">
+        <div className="card-box">
           <div className="card-info">
             <p className="desc">{description}</p>
             <span className="amount">{amount}</span>
