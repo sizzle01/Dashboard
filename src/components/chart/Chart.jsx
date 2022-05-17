@@ -10,8 +10,6 @@ import {
 import Moment from 'moment'
 import { formatDiagnostic } from 'typescript'
 
-// let myDate
-// myDate = moment().format('MMM Do YY')
 const current = new Date()
 const date = `${current.getDate()}, ${
   current.getMonth() + 1

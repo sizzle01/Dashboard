@@ -1,0 +1,44 @@
+.order-wrapper {
+  background-color: white;
+  width: 379px;
+  padding: 10px 0px;
+  margin-bottom: 3px;
+}
+
+.order-wrapper .order {
+  margin-left: 25px;
+}
+
+.order-wrapper .order .order-head {
+  font-family: 'Segoe UI';
+  font-size: 14px;
+  font-weight: 700;
+  color: #262626;
+}
+
+.order-wrapper .order .outer {
+  width: 242px;
+  background-color: #FDC203;
+  height: 4px;
+}
+
+.order-wrapper .order .outer .inner {
+  height: 4px;
+  width: 80%;
+  background-color: green;
+}
+
+.order-wrapper .order .pending {
+  font-family: 'Segoe UI';
+  font-size: 14px;
+  color: #262626;
+  font-weight: 400;
+}
+
+.order-wrapper .order span {
+  font-family: 'Segoe UI';
+  font-size: 14px;
+  color: #262626;
+  font-weight: 400;
+}
+/*# sourceMappingURL=order.css.map */

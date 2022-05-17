@@ -23,13 +23,19 @@
 
       .center {
           margin-top: 41px;
-          
+        
         ul {
-            
           list-style: none;
           margin: 0;
           padding: 0;
-    
+          .menu {
+            text-decoration: none;
+            width: 100%;
+            &:hover {
+              background-color: #e3edf9;
+              border-left: 6px solid #1875F0;
+            }
+          }
           .menu-title {
             font-size: 11px;
             font-family: 'Segoe UI';
@@ -40,16 +46,15 @@
           }
     
           li {
+            width: 100%;
             display: flex;
             align-items: center;
-            padding: 5px;
+            padding:12px;
             cursor: pointer;
             margin-left: 41px;
             margin-bottom: 16px;
     
-            &:hover {
-              background-color: #ece8ff;
-            }
+            
     
             .icon {
               font-size: 18px;

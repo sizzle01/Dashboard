@@ -1,6 +1,5 @@
 import React from 'react'
 import './transactionCards.scss'
-import { smallChart } from '../icons'
 
 const TransactionCards = ({ description, amount }) => {
   return (

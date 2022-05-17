@@ -1,0 +1,40 @@
+.card-wrapper {
+  margin: 95px 0 27px 30px;
+}
+
+.card-wrapper .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 76px;
+  width: 253px;
+  background-color: white;
+  display: flex;
+  width: 253px;
+  padding: 10px;
+}
+
+.card-wrapper .card .card-info {
+  color: #787C90;
+  font-family: 'Segoe UI';
+}
+
+.card-wrapper .card .card-info .desc {
+  font-size: 12px;
+  margin: 0;
+}
+
+.card-wrapper .card .card-info .amount {
+  color: #262626;
+  font-size: 18px;
+}
+
+.card-wrapper .card .card-info .card-icon {
+  background-color: black;
+}
+/*# sourceMappingURL=transactionCards.css.map */

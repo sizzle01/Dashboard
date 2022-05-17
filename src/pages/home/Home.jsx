@@ -60,7 +60,7 @@ const Home = () => {
               pendingCount="20"
               reconciledOrders="Reconciled Payments"
               ReconciledCount="80"
-              totalOrder="Total Paymets"
+              totalOrder="Total Payments"
               totalCount="100"
             />
           </div>

@@ -40,7 +40,6 @@ export const Overview = () => {
     </svg>
   )
 }
-
 export const Wallet = () => {
   return (
     <svg
