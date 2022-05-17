@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+// @ts-ignore
 import Home from './pages/home/Home'
+// @ts-ignore
 import Sidebar from './components/sidebar/Sidebar'
-// import 'bootstrap/dist/css/bootstrap.css'
 
 function App() {
   return (
